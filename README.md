@@ -68,7 +68,7 @@ This will create a copy of the entire `togetherjs.com` site in `build/`.  You'll
 $ node devserver.js
 ```
 
-If you want to develop with TogetherJS you probably want the files built continually.  To do this use:
+If you want to develop with TogetherJS you probably want the files built continuously.  To do this use:
 
 ```sh
 $ grunt devwatch
@@ -86,7 +86,7 @@ Then `static-myapp/togetherjs.js` and `static-myapp/togetherjs-min.js` will be i
 
 Running a local server
 ----------------------
-You shouldn't need to run your own version of the hub server.  But if you
+You need not to run your own version of the hub server.  But if you
 happen to make changes to the server, you can change the default hub
 URL by setting the HUB_URL environment variable when building.  For example:
 ```
@@ -96,7 +96,7 @@ $ HUB_URL=http://localhost:8080 grunt devwatch
 Testing
 -------
 
-Tests are in `togetherjs/tests/` -- these are [doctest.js](http://doctestjs.org/) tests.  To actually run the tests build togetherjs, serve it up, and go to `http://localhost:PORT/togetherjs/tests/` -- from there the tests are linked to from the top of the page.  The actual tests are `*.js` files in `togetherjs/tests/`, generally `test_*.js` for unit-style tests, and `func_*.js` for functional tests.
+Tests are in `togetherjs/tests/` -- these are [doctest.js](http://doctestjs.org/) tests.  To actually run the tests build together js, serve it up, and go to `http://localhost:PORT/togetherjs/tests/` -- from there the tests are linked to from the top of the page.  The actual tests are `*.js` files in `togetherjs/tests/`, generally `test_*.js` for unit-style tests, and `func_*.js` for functional tests.
 
 The "Manual testing" link is something that lets you simulate different conditions in TogetherJS without setting up a second browser/client.
 
